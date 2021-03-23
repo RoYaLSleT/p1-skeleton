@@ -1,5 +1,3 @@
-function test (){
-
-    
-    console.log("blabla");
-}
+/* Actualité */
+let date = Date();
+document.querySelector(".date").innerHTML = date;

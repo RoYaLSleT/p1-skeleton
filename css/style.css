@@ -76,3 +76,73 @@ body{
     height: 90%;
     
 }
+
+/* Actualité */
+
+.banner {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.h1Actualite {
+    text-align: center;
+}
+.h2Actualite {
+    text-align: left;
+}
+.hrActualite {
+    width: 5%;
+    margin-bottom: 25px;
+}
+.h3Acualite {
+    text-align: center;
+    font-size: 24px;
+}
+.bloc-actualite {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.bloc-selecteur {
+    border-radius: 10%;
+    width: 20%;
+    background-color: lightgray;
+}
+
+.list-selecteur {
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    padding: 0;
+}
+
+.selecteur {
+    font-size: 24px;
+    list-style: none;
+    margin-top: 10%;
+}
+
+.article {
+    border-radius: 10%;
+    width: 50%;
+    background-color: lightgoldenrodyellow;
+    margin: 5px;
+}
+.img-article {
+    height: 120px;
+    border-radius: 20%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.bloc-meteo { 
+    border-radius: 10%;
+    text-align: center;
+    width: 20%;
+    background-color: lightblue;
+}
+iframe {
+    border: none;
+    min-height: 325px;
+    width: 70%;
+}
