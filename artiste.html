@@ -11,7 +11,7 @@
 
 <body>
     <!-- NAV -->
-    
+
     <header class="bloc-nav">
         <div class="bloc-logo">
             <img class="logo" src="img/logo.png" alt="logo">
@@ -27,26 +27,42 @@
     </header>
 
     <!-- BANNER -->
-    <img src="#" alt="notre baniere">
-    <!-- MAIN -->
-    <h1>Artiste</h1>
-
-    <div>
-        <div> <a href="#"><img src="#" alt="">
-                <p>Artiste</p>
-            </a>
-        </div>
-        <div> <a href="#"><img src="#" alt="">
-                <p>Artiste</p>
-            </a>
-        </div>
-        <div> <a href="#"><img src="#" alt="">
-                <p>Artiste</p>
-            </a>
-        </div>
+    <div class="div-banner">
+        <img src="img/slider.jpeg" alt="notre baniere" class="banner">
     </div>
+    <!-- MAIN -->
+    <h1 class="title">Nos Artiste</h1>
+    <hr class="hr">
+    <section class="section-artistes">
+        <div class="div-artiste">
 
-    <img src="#" alt="des photo de tableau qui defilent">
+            <img src="img/artiste-1.jpeg" alt="" class="img-artiste">
+            <button class="btn-artiste" onclick="nbClickBtn1++" id="bouton1">En voir plus ...</button>
+
+        </div>
+        <div class="div-artiste">
+
+            <img src="img/artiste-2.jpeg" alt="" class="img-artiste">
+            <button class="btn-artiste" onclick="nbClickBtn2++" id="bouton2">En voir plus ...</button>
+
+        </div>
+        <div class="div-artiste">
+
+            <img src="img/artiste-2.jpeg" alt="" class="img-artiste">
+            <button class="btn-artiste" onclick="nbClickBtn3++" id="bouton3">En voir plus ...</button>
+
+
+        </div>
+    </section>
+    <section class="div-defilante">
+
+        <img onclick="nbClick++" class="img-def">
+
+    </section>
+    <div class="div-radio">
+        <input type="radio" name="" id="input1" disabled>
+        <input type="radio" name="" id="input2" disabled>
+    </div>
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -55,20 +71,22 @@
 
             <div class="box-social">
 
-                <a href="#" class="social"><img  class="rs" src="img/facebook.png" alt="logo RS2"></a>
-                <a href="#" class="social"><img  class="rs" src="img/twitter.png" alt="logo RS3"></a>
-                <a href="#" class="social"><img  class="rs" src="img/discord.png" alt="logo RS4"></a>
-                <a href="#" class="social"><img  class="rs" src="img/youtube.png" alt="facebook"></a>
+                <a href="#" class="social"><img class="rs" src="img/facebook.png" alt="logo RS2"></a>
+                <a href="#" class="social"><img class="rs" src="img/twitter.png" alt="logo RS3"></a>
+                <a href="#" class="social"><img class="rs" src="img/discord.png" alt="logo RS4"></a>
+                <a href="#" class="social"><img class="rs" src="img/youtube.png" alt="facebook"></a>
             </div>
             <p class="copyright">
                 Copyright @ Fou-Stack 2021
             </p>
 
         </div>
-        
+
 
     </footer>
-    <script src="#"></script>
+    <script src="index.js "></script>
+
+
 </body>
 
 </html>
