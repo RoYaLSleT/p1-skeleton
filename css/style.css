@@ -2,9 +2,52 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     background-color: black;
+    color: white;
+    min-height: 100%;
+}
+
+
+/* INDEX */
+
+.body {
+    background-image: url("../img/slider.jpeg");
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-index {
+    height: 100px;
+}
+
+.h1-index {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 400%;
+}
+
+.btn-index {
+    background: red;
+    width: 12%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+}
+
+.btn-index a {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
@@ -27,6 +70,7 @@ body {
     width: 100%;
     height: 50px;
     background-color: #232323;
+    justify-content: space-between;
 }
 
 .nav {
@@ -58,41 +102,66 @@ body {
 }
 
 
-/* FOOTER */
+/* MENU-BURGER */
 
-.footer {
-    height: 10%;
-}
-
-.div-footer {
-    display: flex;
-    height: 90px;
-    flex-direction: column;
-}
-
-.box-social {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+.btn-burger {
+    display: none;
+    background: transparent;
+    border: none;
+    z-index: 2;
+    height: 10px;
     width: 100%;
 }
 
-.social {
-    width: 7%;
-}
-
-.copyright {
+.content-divB {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.section {
+.burgerNav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    margin-right: 10%;
+}
+
+.div-menus {
     display: flex;
     flex-direction: column;
-    height: 90%;
+    align-items: flex-end;
+    margin-right: 6%;
+    margin-top: 3%;
+    background: black;
+}
+
+.menuB1 {
+    width: 20px;
+    height: 3px;
+    color: black;
+    margin-bottom: 7px;
+    background: white;
+}
+
+.a-nav-burger {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background: black;
+}
+
+.a-nav-burger:hover {
+    color: #F3981C;
+    zoom: 150%;
+}
+
+.burgerNav li {
+    color: white;
+    list-style: none;
 }
 
 
@@ -113,7 +182,6 @@ body {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
-    color: white;
 }
 
 .section-artistes {
@@ -135,28 +203,56 @@ body {
 .img-artiste {
     border-radius: 30px;
     object-fit: cover;
-    height: 300px;
-    width: 300px;
-    border: solid 3px rgb(239, 243, 245);
-    box-shadow: 13px 8px 8px rgb(61, 57, 57);
-}
-
-.a-artiste {
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
+    height: 80%;
+    width: 80%;
+    border: solid 3px rgb(173, 177, 179);
+    box-shadow: 5px 5px 15px rgb(77, 74, 74);
 }
 
 .btn-artiste {
-    margin-top: 20px;
+    margin-top: 40px;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 50px;
     box-shadow: 1px 1px 1px 1px rgb(68, 67, 67);
+    width: 35%;
+    height: 40px;
+    background: rgb(76, 76, 150);
+    color: white;
 }
 
 .btn-artiste:hover {
-    zoom: 140%;
+    cursor: pointer;
+}
+
+.div-description {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-description h2 {
+    text-transform: uppercase;
+}
+
+.contener-p {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.div-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.div-p2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
 }
 
 .div-defilante {
@@ -166,6 +262,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
+}
+
+.div-defilante:hover {
+    cursor: pointer;
 }
 
 .img-def {
@@ -189,63 +289,6 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-
-/* LOGO */
-
-.bloc-logo {
-    width: 50%;
-}
-
-.logo {
-    height: 100%;
-    margin-left: 5%;
-}
-
-
-/* NAV */
-
-.bloc-nav {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    background-color: #232323;
-}
-
-.nav {
-    display: flex;
-    width: 50%;
-    align-items: center;
-}
-
-.nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.nav li {
-    color: white;
-    list-style: none;
-}
-
-.a-nav {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.a-nav:hover {
-    color: #F3981C;
 }
 
 
@@ -311,7 +354,6 @@ body {
 .imgonslider {
     height: 200px;
     margin-top: 15%;
-    border: 1px red solid;
 }
 
 .text-slider {
@@ -411,4 +453,70 @@ p-qsn {
     width: 10%;
     height: 100%;
     box-shadow: rgba(182, 182, 182, 0.904) 2px 2px 2px 2px;
+}
+
+
+/* RESPONSIV */
+
+@media screen and (max-width: 650px) {
+    .section-artistes,
+    .div-artiste {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .img-def {
+        width: 80%;
+    }
+    .rs {
+        width: 70%;
+    }
+    .btn-artiste {
+        margin-bottom: 4%;
+    }
+    .title {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .btn-index {
+        width: 25%;
+    }
+    .content-divB {
+        display: flex;
+    }
+    .div-menus {
+        display: flex;
+    }
+    .btn-burger {
+        display: flex;
+    }
+    .nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .section-artistes,
+    .div-artiste,
+    .div-banner,
+    .div-defilante {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    .img-artiste {
+        justify-content: center;
+        height: 70%;
+        width: 70%;
+    }
+    .img-def {
+        height: 100%;
+        width: 80%;
+    }
 }
