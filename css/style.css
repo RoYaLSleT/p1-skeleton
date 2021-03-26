@@ -104,12 +104,8 @@ body {
 
 /* MENU-BURGER */
 
-.btn-burger {
-    display: none;
-    background: transparent;
-    border: none;
-    z-index: 2;
-    height: 10px;
+.footer {
+    height: 10%;
     width: 100%;
 }
 
@@ -456,6 +452,384 @@ p-qsn {
 }
 
 
+/*FORMULAIRE*/
+
+.bloc2 {
+    background-image: url('../img/slider.jpeg');
+    height: 400px;
+    justify-content: space-around;
+}
+
+.Bigtitle {
+    transform: translateY(-130px);
+    height: 40px;
+    color: white;
+    font-size: 55px;
+}
+
+.titre {
+    height: 10px;
+    padding: 10%;
+    padding-bottom: 20px;
+    padding-top: 150px;
+    background-color: black;
+    text-align: center;
+}
+
+
+/*-------------------FORM------------------*/
+
+#formulaire {
+    background-color: rgb(0, 0, 0);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    border: solid rgb(170, 113, 38);
+    border-radius: 2em;
+    padding: 21px 5px 7px 5px;
+    margin: 40px 20px 10px 20px;
+}
+
+.nom {
+    width: 500px;
+    align-self: flex-start;
+}
+
+.prenom {
+    width: 500px;
+    grid-column: 3/4;
+    align-self: flex-start;
+}
+
+.mail {
+    margin-bottom: 150px;
+    width: 600px;
+    grid-column: 2/3;
+    align-self: end;
+    justify-content: center;
+}
+
+.input {
+    border: solid;
+    cursor: pointer;
+    background: grey;
+    box-shadow: 30px 30px 60px #373e4b;
+    border-radius: 2em;
+    border: none;
+    height: 100px;
+    width: 400px;
+    gap: 18px;
+    transition: 0.7s ease 0.3s;
+    text-decoration: none;
+}
+
+.input:hover {
+    transform: translateX(-70px);
+    transform: translateY(-7px);
+    border: none;
+    height: 12%;
+}
+
+#message {
+    cursor: pointer;
+    border-radius: 50px;
+    background: grey;
+    opacity: 0.8;
+    box-shadow: 30px 30px 60px #373e4b;
+    border-radius: 2em;
+    border: none;
+    width: 90%;
+    height: 450px;
+}
+
+::placeholder {
+    border-radius: 50px;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    color: white;
+}
+
+input[type=text] {
+    font-size: 24px;
+    text-align: center;
+}
+
+input[type=email] {
+    text-align: center;
+    font-size: 24px;
+}
+
+#message::placeholder {
+    border-radius: 50px;
+    font-size: 24px;
+    text-align: start;
+    background: grey;
+    height: 90%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+textarea[type=text] {
+    text-align: center;
+    font-size: 24px;
+}
+
+.btn1 {
+    margin-bottom: 100px;
+    margin-top: 20px;
+    background: grey;
+    width: 300px;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 23px;
+    box-shadow: 30px 30px 80px #373e4b;
+    border-radius: 50px;
+    background: grey;
+    color: white;
+    border: none;
+    transition: 0.7s ease 0.3s;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    height: 120px;
+}
+
+.open {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #b1c0dd;
+}
+
+
+/*-------------------MAP------------*/
+
+.carte {
+    height: 450px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 2em;
+    margin: 3px 17px 3px 20px;
+}
+
+.map {
+    cursor: pointer;
+    height: 280px;
+    width: 300px;
+    box-shadow: 30px 30px 60px #373e4b;
+    margin: auto auto auto 24px;
+    transition: 0.7s ease 0.3s;
+}
+
+.map:hover {
+    cursor: pointer;
+    width: 550px;
+    height: 400px;
+}
+
+.bla {
+    border: solid rgb(170, 113, 38);
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto 0 70px;
+    opacity: 0.8;
+    font-size: 16px;
+    color: #ffd700;
+    font-size: 20px;
+    opacity: 0.6;
+    padding: 7px 5px 7px 5px;
+}
+
+@media (max-width: 600px) and (max-width:850px) {
+    .Bigtitle {
+        font-size: 40px;
+        transform: translateY(-30px);
+    }
+    .titre {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #formulaire {
+        height: 799px;
+        width: 92%;
+        display: flex;
+        margin: auto 20px 40px 20px;
+    }
+    .bla {
+        display: none;
+    }
+    .input {
+        border: solid;
+        cursor: pointer;
+        background: grey;
+        box-shadow: 30px 30px 60px #373e4b;
+        border-radius: 2em;
+        border: none;
+        height: 50px;
+        width: 300px;
+        gap: 18px;
+        text-decoration: none;
+        animation-duration: 4s;
+        animation-name: ouioui2;
+        animation-iteration-count: 1;
+    }
+    #message {
+        box-shadow: none;
+        height: 400px;
+        animation: ouioui3;
+    }
+    .btn1 {
+        box-shadow: none;
+        transform: translateX(center);
+        transform: translateY(center);
+        height: 100px;
+        width: 180px;
+        transition: 0.7s ease 0.3s;
+    }
+    .btn1:hover {
+        height: 110px;
+    }
+    .carte {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin: auto 2px auto 10px;
+    }
+    .map {
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+        box-shadow: none;
+    }
+    .map:hover {
+        width: 90%;
+    }
+}
+
+#formulaire {
+    animation-duration: 4s;
+    animation-name: ouioui;
+    animation-iteration-count: 1;
+}
+
+@keyframes ouioui {
+    0% {
+        transform: translateX(12.5%);
+        background-color: rgba(194, 122, 66, 0.659);
+        border-radius: 45em;
+        width: 33%;
+    }
+    25% {
+        transform: translateX(25%);
+        background-color: rgb(140, 65, 109);
+        border-radius: 45em;
+        width: 66%;
+    }
+    50% {
+        transform: translateX(37.5%);
+        background-color: rgb(75, 82, 119);
+        border-radius: 45em;
+        width: 99%;
+    }
+}
+
+@keyframes ouioui2 {
+    33% {
+        width: 33%;
+    }
+    66% {
+        width: 66%;
+    }
+    99% {
+        width: 300px;
+    }
+}
+
+@keyframes ouioui3 {
+    33% {
+        width: 33%;
+    }
+    66% {
+        width: 66%;
+    }
+    99% {
+        width: 400px;
+    }
+}
+
+
+/* Actualité */
+
+.banner {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+a:visited {
+    color: white;
+}
+
+.h1-actualite {
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+.h2-actualite {
+    text-align: left;
+    color: white;
+}
+
+.hr-actualite {
+    width: 6%;
+    margin-bottom: 25px;
+}
+
+.h3-acualite {
+    text-align: center;
+}
+
+.bloc-actualite {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.bloc-selecteur {
+    height: 20%;
+    border-radius: 10%;
+    width: 20%;
+    background-color: black;
+    border: 3px solid white;
+    box-shadow: 10px 10px 5px white;
+}
+
+.list-selecteur {
+    text-align: center;
+    height: 100%;
+    box-shadow: rgba(182, 182, 182, 0.904) 2px 2px 2px 2px;
+}
+
+
 /* RESPONSIV */
 
 @media screen and (max-width: 650px) {
@@ -520,3 +894,157 @@ p-qsn {
         width: 80%;
     }
 }
+
+.recent,
+.evenement,
+.art-francais,
+.international,
+.a-venir {
+    color: white;
+    font-size: 24px;
+    list-style: none;
+    margin-top: 10%;
+}
+
+.article {
+    width: 50%;
+    background-color: black;
+    margin: 5px;
+}
+
+.img-titre-actualite {
+    display: flex;
+    width: 100%;
+}
+
+.img-article {
+    height: 120px;
+    border-radius: 20%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.text-article {
+    color: white;
+}
+
+.bloc-meteo {
+    height: 40%;
+    color: white;
+    border-radius: 10%;
+    text-align: center;
+    width: 20%;
+    background-color: black;
+    box-shadow: 10px 10px 5px white;
+    border: 3px solid white;
+}
+
+.iframe-meteo {
+    border: 1px solid white;
+    height: 325px;
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+.meteo-responsive {
+    display: none;
+}
+
+.date {
+    color: white;
+}
+
+
+/* RESPONSIVE Actualité */
+
+@media screen and (max-width: 600px) {
+    .body {
+        margin: 0%;
+        width: 100%;
+    }
+    .nav {
+        display: none;
+    }
+    .banner {
+        width: 100%;
+    }
+    .bloc-actualite {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .bloc-meteo {
+        align-items: center;
+        text-align: left;
+        display: flex;
+        order: -1;
+        width: 100%;
+        box-shadow: none;
+        height: 20%;
+        justify-content: space-around;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 0%;
+    }
+    .h3-actualite {
+        display: none;
+    }
+    .iframe-meteo {
+        display: none;
+    }
+    .meteo-responsive {
+        display: none;
+        height: 30%;
+    }
+    .bloc-selecteur {
+        border-right: none;
+        border-left: none;
+        border-radius: 0%;
+        display: flex;
+        width: 100%;
+        list-style: none;
+        justify-content: center;
+        box-shadow: none;
+    }
+    .list-selecteur {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .recent,
+    .evenement,
+    .art-francais,
+    .international,
+    .a-venir {
+        font-size: 16px;
+        color: white;
+        margin-top: 0%;
+    }
+    .article {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .img-article {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    .h2-actualite {
+        text-align: left;
+        margin-top: 7%;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+    .rs {
+        width: 70%;
+    }
+}
+
+
+/* FIN RESPONSIVE Acualité */
+
+
+/* FIN Actualité*/
