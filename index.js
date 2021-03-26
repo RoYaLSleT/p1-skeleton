@@ -246,4 +246,7 @@ function ecouteBouton3() {
     })
 }
 ecouteBouton3();
+<<<<<<< HEAD
 
+=======
+>>>>>>> c94ad0ceb0f13d6135837db45da7c52a45b96153
