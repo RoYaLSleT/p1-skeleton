@@ -7,6 +7,7 @@ html {
 body {
     margin: 0;
     background-color: black;
+    color: white;
 }
 
 
@@ -313,10 +314,10 @@ a:visited {
 .h1-actualite {
     color: white;
     text-align: center;
+    font-size: 32px;
 }
 .h2-actualite {
     text-align: left;
-    color: white;
 }
 .hr-actualite {
     width: 6%;
@@ -493,7 +494,6 @@ a:visited {
     justify-content: space-around;
 }
 
-<<<<<<< HEAD
 
     .imgonslider{
         height: 200px;
@@ -609,8 +609,6 @@ a:visited {
     margin-top: 15%;
     border: 1px red solid;
 }
-=======
->>>>>>> c94ad0ceb0f13d6135837db45da7c52a45b96153
 
     .imgonslider{
         height: 200px;
@@ -881,12 +879,7 @@ button{
     cursor: pointer;
     width: 160%;
     height: 100%;
-<<<<<<< HEAD
     box-shadow: rgba(182, 182, 182, 0.904) 2px 2px 2px 2px;
-}
-
-=======
-    transform: translateY(-20px);
 }
 
 .bla{
@@ -894,4 +887,3 @@ button{
     padding: 80px;
     font-size: 16px;
 }
->>>>>>> c94ad0ceb0f13d6135837db45da7c52a45b96153
